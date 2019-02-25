@@ -1,0 +1,343 @@
+/*=============================================================================================*/
+/* Base */
+/*=============================================================================================*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+
+/*=============================================================================================*/
+/* Header */
+/*=============================================================================================*/
+
+.main-header {
+  height: 65px;
+  background-color: #7B72D8;
+}
+
+#app-name {
+  padding-top: 22px;
+  margin-left: 20px;
+  color: #FFFFFF;
+  font-size: 1em;
+}
+
+#app-name > span {
+  font-weight: 300;
+}
+
+#icon-notify {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 22px;
+  right: 190px;
+}
+
+.pipe {
+  width: 30px;
+  height: 90px;
+  position: absolute;
+  top: 11px;
+  right: 155px;
+  font-size: 2em;
+  font-weight: lighter;
+  color: #4a5972;
+}
+
+.user-pic {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 13px;
+  right: 120px;
+  border-radius: 50%;
+}
+
+.user > p {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: .9em;
+}
+
+/*=============================================================================================*/
+/* Navbar */
+/*=============================================================================================*/
+
+.navbar {
+  margin: 0;
+  width: 100%;
+  background-color: #534f87;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  z-index: 98;
+}
+
+.icons {
+  width: 35px;
+  height: 50px;
+  padding: 5px;
+  fill: lightgrey;
+}
+
+/*=============================================================================================*/
+/* Search */
+/*=============================================================================================*/
+  
+
+.dashboard-search {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-box {
+  flex: 1;
+  padding: .67em;
+}
+
+.dashboard-box > h2 {
+  font-size: .95em;
+  font-weight: 400;
+  color: #576272;
+}
+
+.search-box {
+  background-color: #eee;
+  border-bottom: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+  height: 60px;
+  flex: .7;
+}
+
+#search {
+  width: 90%;
+  height: 60%;
+  margin: 13px 5px 5px 10px;
+  border-radius: 5px;
+  text-indent: 4px;
+  border: none;
+}
+
+/*=============================================================================================*/
+/* Alert Notification */
+/*=============================================================================================*/
+
+.alert-demo {
+  height: 40px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: #7B72D8;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.alert-text > p {
+  margin-left: 10px;
+  padding-top: 11px;
+  color: white;
+  font-size: .9em;
+}
+
+.alert-text > p > span {
+  font-weight: 700;
+}
+
+.alert-close > button {
+  position: absolute;
+  top: 201px;
+  right: 6%;
+  background-color: inherit;
+  border: 0;
+  color: white;
+}
+
+.alert-close > button:hover {
+  cursor: pointer;
+}
+
+
+/*=============================================================================================*/
+/* Traffic Buttons */
+/*=============================================================================================*/
+
+.traffic-button-group {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.widget-name {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #4a5972;
+  font-size: .97em;
+}
+
+#chart-buttons {
+  margin-top: 30px;
+}
+
+#chart-buttons > a {
+  padding-top: 4px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 4px;
+  text-decoration: none;
+  font-size: .9em;
+  border-radius: 20px;
+  color: #4a5972;
+}
+
+#chart-buttons > a:focus {
+  background-color: #50e080;
+  color: white;
+}
+
+/*=============================================================================================*/
+/* Traffic Widget */
+/*=============================================================================================*/
+
+#traffic-widget-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*=============================================================================================*/
+/* Daily Traffic Widget */
+/*=============================================================================================*/
+
+#daily-traffic-widget-container {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+/*=============================================================================================*/
+/* Responsive MQ */
+/*=============================================================================================*/
+
+/*========================================================*/
+/* Navbar */
+/*========================================================*/
+  
+@media only screen and (min-width: 768px) {
+
+  .navbar {
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    top: 65px;
+    left: 0px;
+    width: 70px;
+    min-height: 2500px;
+    
+    
+  }
+  
+  .icons {
+    width: 55px;
+    height: 45px;
+    margin: 10px 0px 0px 7px;
+    fill: lightgrey;
+  }
+
+/*========================================================*/
+/* Search */
+/*========================================================*/
+
+  .dashboard-search {
+    margin-top: 0px;
+  }
+
+  .dashboard-box > h2 {
+    margin-left: 80px;
+  }
+
+  .search-box {
+    flex: 2.2;
+  }
+
+  #search {
+    width: 60%;
+    height: 60%;
+    margin: 13px 5px 5px 39%;
+    border-radius: 5px;
+    text-indent: 4px;
+  }
+
+/*========================================================*/
+/* Alert Notification */
+/*========================================================*/
+
+  .alert-demo {
+    margin-left: 80px;
+    margin-right: 5px;
+    width: 90%;
+  }
+
+  .alert-close > button {
+    position: absolute;
+    top: 150px;
+    right: 60px;
+    background-color: inherit;
+    border: 0;
+    color: white;
+  }
+
+/*========================================================*/
+/* Traffic Buttons */
+/*========================================================*/
+
+  .traffic-button-group {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  } 
+
+  .widget-name {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+    margin-top: 20px;
+  }
+
+  #chart-buttons {
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    right: 30px;
+    margin-top: 20px;
+  }
+
+/*========================================================*/
+/* Traffic Widget */
+/*========================================================*/
+
+  #traffic-widget-container {
+    margin-left: 80px;
+    margin-right: 20px;
+  }
+
+  #daily-traffic-widget-container {
+    margin-left: 80px;
+  }
+
+  
+
+}
