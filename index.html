@@ -21,7 +21,7 @@
     </div>
 
     <nav class="navbar">
-        <a href="#app-name">
+        <a href="#">
             <svg class="icons" version="1.1" id="dashboard-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                 <g id="_x31_0_20_">
@@ -128,10 +128,33 @@
         <canvas id="traffic-widget" width="400" height="200"></canvas>
     </div>
     
-    <div id="daily-traffic-widget-container">
-        <canvas id="daily-traffic-widget" width="400" height="200"></canvas>
+    <div id="chart-block">
+        <div id="daily-traffic-widget-container">
+            <h3 id="daily-widget-name">Daily Traffic</h3>
+            <canvas id="daily-traffic-widget" width="400" height="200"></canvas>
+        </div>
+
+        <div id="mobile-users-widget-container">
+            <h3 id="mobile-users-widget-name">Mobile Users</h3>
+            <canvas id="mobile-users-widget" width="400" height="200"></canvas>
+        </div>
     </div>
 
+    <div id="members">
+        <h3 id="members-name">New Members</h3>
+    </div>
+
+    <div id="recent-activity">
+        <h3 id="recent-activity">Recent Activity</h3>
+    </div>
+
+    <div id="messaging">
+        <h3 id="message-user">Message User</h3>
+    </div>
+
+    <div id="settings">
+        <h3 id="settings-name">Settings</h3>
+    </div>
 
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
