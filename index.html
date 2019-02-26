@@ -140,16 +140,125 @@
         </div>
     </div>
 
-    <div id="members">
+    <div id="new-member-group">
         <h3 id="members-name">New Members</h3>
+        <table id="member-table">
+            <tbody>
+            <tr>
+                <td>
+                    <img src="images/member-1.jpg" alt="" class="member-avatar">
+                </td>
+                <td class="contact">
+                    <span class="member">Alexa Day</span><br>
+                    <span class="member-email">alexa.day@example.com</span>
+                </td>
+                <td class="date">
+                    <span>2/23/19</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/member-2.jpg" alt="" class="member-avatar">
+                </td>
+                <td class="contact">
+                    <span class="member">James Benedict</span><br>
+                    <span class="member-email">james.benedict@example.com</span>
+                </td>
+                <td class="date">
+                    <span>2/24/19</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/member-3.jpg" alt="" class="member-avatar">
+                </td>
+                <td class="contact">
+                    <span class="member">Nancy Thomas</span><br>
+                    <span class="member-email">nancy.thomas@example.com</span>
+                </td>
+                <td class="date">
+                    <span>2/25/19</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/member-4.jpg" alt="" class="member-avatar">
+                </td>
+                <td class="contact">
+                    <span class="member">Roger Ver</span><br>
+                    <span class="member-email">roger.ver@bitcoin.com</span>
+                </td>
+                <td class="date">
+                    <span>2/26/19</span>
+                </td>
+            </tr>
+        </tbody>
+        </table>
     </div>
 
     <div id="recent-activity">
-        <h3 id="recent-activity">Recent Activity</h3>
+        <h3 id="recent">Recent Activity</h3>
+            <table id="member-table">
+                <tbody>
+                <tr>
+                    <td>
+                        <img src="images/member-2.jpg" alt="" class="member-avatar">
+                    </td>
+                    <td class="contact">
+                        <span class="member">James Benedict signed up for YourApp</span><br>
+                        <span class="time-passed">2 hours ago</span>
+                    </td>
+                    <td class="expand-btn">
+                        <img class="activity-arrow" src="icons/arrow-right.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/member-2.jpg" alt="" class="member-avatar">
+                    </td>
+                    <td class="contact">
+                        <span class="member">James Benedict added a new post on SEO Tips</span><br>
+                        <span class="time-passed">4 hours ago</span>
+                    </td>
+                    <td class="expand-btn">
+                        <img class="activity-arrow" src="icons/arrow-right.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/member-4.jpg" alt="" class="member-avatar">
+                    </td>
+                    <td class="contact">
+                        <span class="member">Roger Ver linked to Facebook changes</span><br>
+                        <span class="time-passed">8 hours ago</span>
+                    </td>
+                    <td class="expand-btn">
+                        <img class="activity-arrow" src="icons/arrow-right.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/member-4.jpg" alt="" class="member-avatar">
+                    </td>
+                    <td class="contact">
+                        <span class="member">Roger Ver added 3 new members to YourApp</span><br>
+                        <span class="time-passed">8 hours ago</span>
+                    </td>
+                    <td class="expand-btn">
+                        <img class="activity-arrow" src="icons/arrow-right.png" alt="">
+                    </td>
+                </tr>
+            </tbody>
+            </table>
     </div>
 
     <div id="messaging">
         <h3 id="message-user">Message User</h3>
+        <form id="message-form" action="index.html" method="get" name="messageForm">
+            <input id="user-search" type="search" placeholder="Search for User">
+            <textarea name="message" placeholder="Message for User"></textarea>
+            <button id="submit-form" type="submit">SEND</button>
+        </form>
     </div>
 
     <div id="settings">

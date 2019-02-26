@@ -25,6 +25,10 @@ h2 {
 .main-header {
   height: 65px;
   background-color: #7B72D8;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #app-name {
@@ -80,13 +84,15 @@ h2 {
 /*=============================================================================================*/
 
 .navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 65px;
   margin: 0;
   width: 100%;
   background-color: #534f87;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  z-index: 98;
 }
 
 .icons {
@@ -94,6 +100,11 @@ h2 {
   height: 50px;
   padding: 5px;
   fill: lightgrey;
+}
+
+.navbar > a:focus {
+  border-bottom: 3px solid #50e080;
+  border-radius: 2px;
 }
 
 /*=============================================================================================*/
@@ -144,7 +155,7 @@ h2 {
   margin-left: 5%;
   background-color: #7B72D8;
   border-radius: 5px;
-  margin-top: 15px;
+  margin-top: 80px;
 }
 
 .alert-text > p {
@@ -160,7 +171,7 @@ h2 {
 
 .alert-close > button {
   position: absolute;
-  top: 201px;
+  top: 150px;
   right: 6%;
   background-color: inherit;
   border: 0;
@@ -222,7 +233,7 @@ h2 {
 #mobile-users-widget-name,
 #social-widget-name,
 #members-name,
-#recent-activity,
+#recent,
 #message-user,
 #settings-name {
   text-transform: uppercase;
@@ -242,6 +253,153 @@ h2 {
 }
 
 /*=============================================================================================*/
+/* Social */
+/*=============================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================================================================================*/
+/* New Member Group */
+/*=============================================================================================*/
+
+#new-member-group,
+#recent-activity {
+  margin: 40px 20px 40px 20px;
+}
+
+.member-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.member-email {
+  color: #5f9ae8;
+}
+
+.contact {
+  padding-left: 10px;
+}
+
+.date {
+  position: absolute;
+  right: 30px;
+  padding-top: 20px;
+  z-index: -1;
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  color: #a2adb5;
+  font-size: .9em;
+  margin-top: 20px;
+  border-bottom: 1px solid lightgray;
+  
+}
+
+td {
+  height: 65px;
+}
+
+/*=============================================================================================*/
+/* Recent Activity */
+/*=============================================================================================*/
+
+.member,
+.time-passed {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.expand-btn {
+  position: absolute;
+  right: 40px;
+  z-index: -1;
+  padding-top: 20px;
+}
+
+/*=============================================================================================*/
+/* Messaging */
+/*=============================================================================================*/
+
+#messaging {
+  margin: 20px;
+}
+
+input[type="search"] {
+  width: calc(100% - 12px);
+  height: 40px;
+  font-size: .95em;
+  font-style: italic;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  text-indent: 5px;
+  background-color: #eee;
+  margin-bottom: 25px;
+}
+
+textarea {
+  width: calc(100% - 12px);
+  font-style: italic;
+  font-size: .95em;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding-top: 7px;
+  padding-left: 7px;
+  height: 120px;
+  background-color: #eee;
+  resize: none;
+}
+
+#submit-form {
+  width: calc(100% - 12px);
+  height: 45px;
+  margin-top: 20px;
+  background-color: #7B72D8;
+  border-radius: 5px;
+  color: white;
+}
+
+#submit-form:hover {
+  background-color: #534f87;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================================================================================*/
 /* Responsive MQ */
 /*=============================================================================================*/
 
@@ -252,15 +410,13 @@ h2 {
 @media only screen and (min-width: 768px) {
 
   .navbar {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     justify-content: flex-start;
     top: 65px;
     left: 0px;
     width: 70px;
     min-height: 2500px;
-    
-    
   }
   
   .icons {
@@ -273,6 +429,7 @@ h2 {
   .navbar > a:focus {
     border-left: 3px solid #50e080;
     border-radius: 2px;
+    border-bottom: 0;
   }
 
 /*========================================================*/
