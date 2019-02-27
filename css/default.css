@@ -115,6 +115,7 @@ h2 {
 .dashboard-search {
   display: flex;
   flex-direction: row;
+  margin-top: 120px;
 }
 
 .dashboard-box {
@@ -143,6 +144,7 @@ h2 {
   border-radius: 5px;
   text-indent: 4px;
   border: none;
+  background-color: #fff;
 }
 
 /*=============================================================================================*/
@@ -155,7 +157,7 @@ h2 {
   margin-left: 5%;
   background-color: #7B72D8;
   border-radius: 5px;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .alert-text > p {
@@ -171,7 +173,7 @@ h2 {
 
 .alert-close > button {
   position: absolute;
-  top: 150px;
+  top: 220px;
   right: 6%;
   background-color: inherit;
   border: 0;
@@ -231,7 +233,7 @@ h2 {
 
 #daily-widget-name,
 #mobile-users-widget-name,
-#social-widget-name,
+#social-name,
 #members-name,
 #recent,
 #message-user,
@@ -256,22 +258,52 @@ h2 {
 /* Social */
 /*=============================================================================================*/
 
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin-left: 15px;
+  margin-top: 15px;
+  
+}
 
+.circle {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 40px;
+  background-color: #7B72D8;
+  border-radius: 50%;
+  display: inline-block;
+}
 
+.social-box {
+  border: 1px solid lightgray;
+  margin: 15px;
+  padding: 10px;
+  height: 130px;
+}
 
+.social-description {
+  display: inline-block;
+  margin-left: 3%;
+  padding-top: 10px;
+}
 
+.social-heading {
+  color: #7B72D8;
+  padding-left: 6px;
+  margin: 0;
+  margin-top: 10px;
+  
+ 
+ 
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.count {
+  font-size: 2.7em;
+  font-weight: 300;
+  display: inline;
+  color: #a2adb5;
+}
 
 
 /*=============================================================================================*/
@@ -333,7 +365,7 @@ td {
 
 .expand-btn {
   position: absolute;
-  right: 40px;
+  right: 10px;
   z-index: -1;
   padding-top: 20px;
 }
@@ -429,11 +461,11 @@ textarea {
 }
 
 input:checked + .slider {
-  background-color: #7B72D8;
+  background-color: #46ce1c;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #7B72D8;
+  box-shadow: 0 0 1px #46ce1c;
 }
 
 input:checked + .slider:before {
@@ -522,7 +554,7 @@ input:checked + .slider:before {
 /* Navbar */
 /*========================================================*/
   
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 868px) {
 
   .navbar {
     position: fixed;
@@ -552,7 +584,7 @@ input:checked + .slider:before {
 /*========================================================*/
 
   .dashboard-search {
-    margin-top: 0px;
+    margin-top: 60px;
   }
 
   .dashboard-box > h2 {
