@@ -21,7 +21,7 @@
     </div>
 
     <nav class="navbar">
-        <a href="#">
+        <a href="#" tabindex="0">
             <svg class="icons" version="1.1" id="dashboard-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                 <g id="_x31_0_20_">
@@ -39,7 +39,7 @@
             </svg>
         </a>
 
-        <a href="#">
+        <a href="#" tabindex="0">
             <svg class="icons" version="1.1" id="members-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                 <g id="_x37__17_">
@@ -57,7 +57,7 @@
             </svg>
         </a>
 
-        <a href="#">
+        <a href="#" tabindex="0">
             <svg class="icons" version="1.1" id="visits-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                 <g id="_x35__10_">
@@ -73,7 +73,7 @@
             </svg>
         </a>
 
-        <a href="#settings">
+        <a href="#settings" tabindex="0">
             <svg class="icons" version="1.1" id="settings-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
                 <g id="_x32__16_">
@@ -117,10 +117,10 @@
     <div class="traffic-button-group">
         <h3 class="widget-name">Traffic</h3>
         <div id="chart-buttons">
-            <a href="#" id="button-hourly">Hourly</a>
-            <a href="#" id="button-daily">Daily</a>
-            <a href="#" id="button-weekly" class="active">Weekly</a>
-            <a href="#" id="button-monthly">Monthly</a>
+            <a href="#" tabindex="0" id="button-hourly">Hourly</a>
+            <a href="#" tabindex="0" id="button-daily">Daily</a>
+            <a href="#" tabindex="0" id="button-weekly" class="active">Weekly</a>
+            <a href="#" tabindex="0" id="button-monthly">Monthly</a>
         </div>
     </div>
         
@@ -139,9 +139,12 @@
             <canvas id="mobile-users-widget" width="400" height="200"></canvas>
         </div>
     </div>
-
-    <div id="social-container">
+    
+    <div id="social-name-container">
         <h3 id="social-name">Social Stats</h3>
+    </div>
+    
+    <div id="social-container">
         <div class="social-box">
             <div class="circle">
                 <img src="icons/icon-twitter.svg" alt="" class="social-icon">
@@ -170,7 +173,8 @@
             </div>
         </div>
     </div>
-            
+    
+    <div class="grid-container">
     <div id="new-member-group">
         <h3 id="members-name">New Members</h3>
         <table id="member-table">
@@ -350,6 +354,7 @@
             <button class="save">SAVE</button>
             <button class="cancel">CANCEL</button>
         </div>
+    </div>
     </div>
 
     

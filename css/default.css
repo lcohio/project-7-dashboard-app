@@ -29,6 +29,7 @@ h2 {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 5;
 }
 
 #app-name {
@@ -93,6 +94,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  z-index: 5;
 }
 
 .icons {
@@ -116,6 +118,7 @@ h2 {
   display: flex;
   flex-direction: row;
   margin-top: 120px;
+  border-top: 1px solid darkgray;
 }
 
 .dashboard-box {
@@ -245,6 +248,10 @@ h2 {
   font-size: .97em;
 }
 
+#social-name {
+  margin-top: 50px;
+}
+
 /*=============================================================================================*/
 /* Daily Traffic Widget */
 /*=============================================================================================*/
@@ -252,6 +259,15 @@ h2 {
 #daily-traffic-widget-container {
   margin-left: 10px;
   margin-right: 20px;
+  margin-top: 30px;
+}
+
+/*=============================================================================================*/
+/* Mobile Users Widget */
+/*=============================================================================================*/
+
+#mobile-users-widget-container {
+  margin-top: 30px;
 }
 
 /*=============================================================================================*/
@@ -280,6 +296,7 @@ h2 {
   margin: 15px;
   padding: 10px;
   height: 130px;
+  background-color: #f4f6f9;
 }
 
 .social-description {
@@ -312,7 +329,7 @@ h2 {
 
 #new-member-group,
 #recent-activity {
-  margin: 40px 20px 40px 20px;
+  padding: 40px 20px 40px 20px;
 }
 
 .member-avatar {
@@ -365,7 +382,7 @@ td {
 
 .expand-btn {
   position: absolute;
-  right: 10px;
+  right: 20px;
   z-index: -1;
   padding-top: 20px;
 }
@@ -375,7 +392,7 @@ td {
 /*=============================================================================================*/
 
 #messaging {
-  margin: 20px;
+  padding: 20px;
 }
 
 input[type="search"] {
@@ -563,7 +580,7 @@ input:checked + .slider:before {
     top: 65px;
     left: 0px;
     width: 70px;
-    min-height: 2500px;
+    min-height: 900px;
   }
   
   .icons {
@@ -615,7 +632,7 @@ input:checked + .slider:before {
 
   .alert-close > button {
     position: absolute;
-    top: 150px;
+    top: 160px;
     right: 60px;
     background-color: inherit;
     border: 0;
@@ -669,8 +686,7 @@ input:checked + .slider:before {
   #chart-block {
     display: flex;
     flex-direction: row;
-   
-  }
+   }
 
   #mobile-users-widget-container {
     border-bottom: 1px solid lightgray;
@@ -683,7 +699,6 @@ input:checked + .slider:before {
   #mobile-users-widget-name,
   #social-widget-name,
   #members-name,
-  #recent-activity,
   #message-user,
   #settings-name {
     text-transform: uppercase;
@@ -696,18 +711,51 @@ input:checked + .slider:before {
 /*========================================================*/
 /* Social Stats */
 /*========================================================*/
-  
-  #social-block {
-    margin-left: 80px;
+
+  #social-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: 6%;
+  }
+
+  .social-box {
+    width: 30%;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
 
+  #social-name-container {
+    text-align: center;
+  }
 
+/*========================================================*/
+/* Lower Grid Layout */
+/*========================================================*/
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    margin-left: 80px;
+  }
 
+  .date {
+    position: absolute;
+    left: 400px;
+  }
 
+  #settings {
+    margin-left: 20px;
+    margin-top: 25px;
+  }
 
+  .expand-btn {
+    right: 40px;
+  }
 
+  
 
 
 
