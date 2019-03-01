@@ -10,8 +10,8 @@ const chart = new Chart(ctx, {
     data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
-            label: "My First dataset",
-            backgroundColor: '#7B72D8',
+            label: "Monthly Traffic",
+            backgroundColor: '#aef2e0',
             borderColor: 'rgb(255, 99, 132)',
             data: [0, 10, 5, 2, 20, 30, 45],
         }]
@@ -29,7 +29,7 @@ const chart2 = new Chart(ctx2, {
     data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
-            label: "My First dataset",
+            label: "Monthly Traffic",
             backgroundColor: '#7B72D8',
             borderColor: 'rgb(255, 99, 132)',
             data: [0, 10, 5, 2, 20, 30, 45],
@@ -46,15 +46,23 @@ const chart3 = new Chart(ctx3, {
 
     // The data for our dataset
     data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: ["Phones", "Tablets", "Desktop"],
         datasets: [{
             label: "My First dataset",
-            backgroundColor: '#7B72D8',
+            backgroundColor: ['#7B72D8', '#F27171', '#339BEA'],
             borderColor: 'rgb(255, 99, 132)',
-            data: [0, 10, 5, 2, 20, 30, 45],
+            data: [20, 30, 45],
         }]
     },
 
     // Configuration options go here
     options: {}
+});
+
+
+const alertNotify = document.querySelector('.alert-demo');
+const alertButton = document.querySelector('#closealert');
+
+alertButton.addEventListener('click', () => {
+    alertNotify.style.display = 'none';
 });
