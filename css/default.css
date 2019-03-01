@@ -696,7 +696,7 @@ input:checked + .slider:before {
   }
 
   #daily-widget-name {
-    padding-left: 50px;
+    padding-left: 70px;
     margin-left: 10px;
   }
 
@@ -747,6 +747,9 @@ input:checked + .slider:before {
     right: 40px;
   }
 
+  .dropdown {
+    margin-top: 17px;
+  }
   
 
 

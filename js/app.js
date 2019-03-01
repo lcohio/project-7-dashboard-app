@@ -11,7 +11,7 @@ const chart = new Chart(ctx, {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
             label: "Monthly Traffic",
-            backgroundColor: '#aef2e0',
+            backgroundColor: '#75b5ff',
             borderColor: 'rgb(255, 99, 132)',
             data: [0, 10, 5, 2, 20, 30, 45],
         }]
