@@ -105,15 +105,14 @@ a:focus {
 /*=============================================================================================*/
 
 .navbar {
-  overflow: hidden;
   position: fixed;
   top: 65px;
   margin: 0;
   width: 100%;
   background-color: #534f87;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   z-index: 5;
 }
 
@@ -135,8 +134,8 @@ a:focus {
   
 
 .dashboard-search {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: .35fr .65fr;
   margin-top: 120px;
   border-top: 1px solid darkgray;
 }
@@ -598,12 +597,13 @@ input:checked + .slider:before {
 
   .navbar {
     position: fixed;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     top: 65px;
     left: 0px;
     width: 70px;
-    min-height: 1000px;
+    height: 100vh;
   }
   
   .icons {
